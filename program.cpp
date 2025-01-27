@@ -9,8 +9,15 @@ int fibonacci(int n) {
 int main() {
     int number;
     cin >> number;
-    cout << number << endl;
+
+    if (number < 0) {
+        cout << "Liczba musi być nieujemna!" << endl;
+        return 1;
+    }
+
+    cout << number << endl; 
     cout << fibonacci(number) << endl;
+
     return 0;
 }
 
